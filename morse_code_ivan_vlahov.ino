@@ -3,7 +3,7 @@
 
 // LED Morse Coder 
 // 21.11.2019.
-// Download Serial Bluetooth Terminal on your smartphone and connect it to the HC-05 (pin is 1234)
+// Download Serial Bluetooth Terminal on your smartphone and connect it to the HC-05 (PIN is 1234)
 // Send strings to the HC-05, and the LED will light up
 
 #define ledPin 7  // pin where we will put our LED
