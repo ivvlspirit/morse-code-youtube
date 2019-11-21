@@ -23,8 +23,10 @@ void setup() {
 
 void loop() {
   if(Serial.available() > 0){ // checks whether data is comming from the serial port
-    state = Serial.read(); // reads the data from the serial port
+    state = Serial.read(); // reads the string character by character from the serial port
     
+    // each string ends with ascii 13 when sent through the serial port
+    // when it reaches ascii 13, the string is completed and the LED starts blinking
     if(state != 13){
       s.concat((char) state);
       counter++;
